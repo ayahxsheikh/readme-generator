@@ -23,40 +23,43 @@ inquirer.prompt([
 },
 {
     name: 'installation',
-    message: 'What are the steps required to install your project'
+    message: 'What command should be run to install dependencies? '
 },
 {
     name: 'usage',
     message: 'Provide further instructions for usage'
 },
 {
-    name: 'credits',
-    messgae: 'list any collaborators'
+    name: 'contribution',
+    messgae: 'What does the user need to know about contributing to the repo?'
 },
 {
     name: 'license',
-    message: 'What is your license',
+    message: 'What license does your project require?',
     type: 'list',
-    choices: ['MIT',]
+    choices: ['MIT', 'Apache', 'BSD 2', 'GNU']
 },
 {
     name: 'tests',
-    message: 'Instructions for further testing'
+    message: 'What command should be run to test the project?'
 },
 {
     name: 'questions',
-    message: 'please provide follow-up questions'
+    message: 'Please provide any follow-up questions'
 }
 ]).then(answers => {
 
-console.log('Generating README...');
-writeToFile(answers);
+    writeToFile(answers);
+    console.log('Generating README...');
 });
 
 // function to write README file
 function writeToFile(answers) {
     fs.writeFile(path.join(__dirname, 'utils' ,'README.md'), generateMarkdown(answers), (err) => {
-        if (err) throw err;
+        if (err){
+            console.error(err);
+            console.log('You have encountered an error');
+        } 
 
     })
 };

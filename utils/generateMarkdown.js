@@ -14,22 +14,25 @@ function generateMarkdown(answers) {
   - [Questions](#questions)
 
   ## Installation
+  To install necessary dependencies, run the following command:
+
   ${answers.installation}
 
   ## Usage
   ${answers.usage}
 
-  ## Credits
-  ${answers.credits}
-
   ## License 
   ${answers.license}
-
+  
+  ## Contributing
+  ${answers.contribution}
+  
   ## Tests
   ${answers.tests}
 
   ## Questions
   GitHub Username: ${answers.username}
+
   Email: ${answers.email}
 
 
