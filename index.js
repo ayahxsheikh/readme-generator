@@ -10,6 +10,10 @@ inquirer.prompt([
     message: 'What is your GitHub username?'
 },
 {
+    name: 'email',
+    message: 'What is your email address?'
+},
+{
     name: 'title',
     message: 'What is the title of your project?'
 },
@@ -33,20 +37,24 @@ inquirer.prompt([
     name: 'license',
     message: 'What is your license',
     type: 'list',
-    choices: ['MT',]
+    choices: ['MIT',]
+},
+{
+    name: 'tests',
+    message: 'Instructions for further testing'
+},
+{
+    name: 'questions',
+    message: 'please provide follow-up questions'
 }
 ]).then(answers => {
 
-//    [answers.username, answers.title, answers.description, answers.usage, answers.credits, answers.license];
-
-console.log(answers);
+console.log('Generating README...');
 writeToFile(answers);
 });
 
 // function to write README file
-//append each answer from user input under relevant title in the readme file 
 function writeToFile(answers) {
-    // generateMarkdown(answers);
     fs.writeFile(path.join(__dirname, 'utils' ,'README.md'), generateMarkdown(answers), (err) => {
         if (err) throw err;
 
