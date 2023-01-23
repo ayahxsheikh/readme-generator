@@ -37,18 +37,21 @@ inquirer.prompt([
 }
 ]).then(answers => {
 
-//    [
-//     answers.username, answers.title, answers.description, answers.usage, answers.credits, answers.license
-// ];
+//    [answers.username, answers.title, answers.description, answers.usage, answers.credits, answers.license];
 
 console.log(answers);
-})
+writeToFile(answers);
+});
 
 // function to write README file
 //append each answer from user input under relevant title in the readme file 
-function writeToFile(fileName, ansers) {
+function writeToFile(answers) {
+    // generateMarkdown(answers);
+    fs.writeFile(path.join(__dirname, 'utils' ,'README.md'), generateMarkdown(answers), (err) => {
+        if (err) throw err;
 
-}
+    })
+};
 
 // function to initialize program
 function init() {
