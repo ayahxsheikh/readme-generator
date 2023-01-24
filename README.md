@@ -24,16 +24,17 @@ In order to use the readme-generator please adhere to the following guidelines:
 * Clone the repository 
 * To install the required dependency for the app run the following command in the terminal:
 
- *  ``` npm install inquirer@^8.0.0```
+  ``` npm install inquirer@^8.0.0```
 
 * The application will be invoked by using the following command:
 
-  *  ```node index.js```
+  ```node index.js```
 
 ## Usage 
 
 Here is an image to display the readme-generator working in the terminal:
 
+<img width="847" alt="readme-sc" src="https://user-images.githubusercontent.com/110252168/214401841-61633ff6-a52c-4c9b-92f7-cbe7bfd3fecb.png">
 
 ## Technologies
 
