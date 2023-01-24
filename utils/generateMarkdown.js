@@ -31,7 +31,8 @@ function getBadge(answers){
 // function to generate markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}
-
+  
+  ${getBadge(answers)}
 
   ## Description
   ${answers.description}
@@ -53,7 +54,7 @@ function generateMarkdown(answers) {
   ${answers.usage}
 
   ## License 
-  ${getBadge(answers)}
+  This project is covered under the ${answers.license} license.
   
   ## Contributing
   ${answers.contribution}
@@ -71,3 +72,9 @@ function generateMarkdown(answers) {
 }
 
 module.exports = generateMarkdown;
+
+
+
+
+
+//  When a user chooses a license for their application from a list of options then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled **License** that explains which license the application is covered under
