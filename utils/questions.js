@@ -34,7 +34,7 @@ function questions () {
     {
         type: 'input',
         name: 'contribution',
-        messgae: 'What does the user need to know about contributing to the repo?'
+        messgae: 'What does the user need to know about contributing to the project?'
     },
     {
         name: 'license',
@@ -52,10 +52,10 @@ function questions () {
     }
     ]).then(answers => {
         writeToFile(answers);
-        
+
         // function to write README file
         function writeToFile(answers) {
-            fs.writeFile(path.join(__dirname, 'README.md'), generateMarkdown(answers), (err) => {
+            fs.writeFile(path.join(__dirname,'..', 'README.md'), generateMarkdown(answers), (err) => {
                 if (err) throw err;
             });
     };

@@ -56,25 +56,27 @@ function generateMarkdown(answers) {
   ## License 
   This project is covered under the ${answers.license} license.
   
-  ## Contributing
+  ## Contributions
+  A list of contributors 
   ${answers.contribution}
   
   ## Tests
+  Run the following command in the terminal to run tests:
   ${answers.tests}
 
   ## Questions
+  Contact infotmation:
+
   GitHub Username: ${answers.username}
 
   Email: ${answers.email}
 
 
+  ---
+
+  © ASheikh.
+
 `;
 }
 
 module.exports = generateMarkdown;
-
-
-
-
-
-//  When a user chooses a license for their application from a list of options then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled **License** that explains which license the application is covered under
