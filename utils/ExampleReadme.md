@@ -16,17 +16,18 @@
   ## Installation
   To install necessary dependencies, run the following command:
 
-  enter example dependency here 
+  example command enetered here
 
   ## Usage
-  example intructions for usage
+  example instructions 
 
   ## License 
   This project is covered under the Apache license.
   
   ## Contributions
-  A list of contributors 
-  example contributor 1 and 2
+  A list of contributors:
+   
+  contributor 1 and contributor 2
   
   ## Tests
   Run the following command in the terminal to run tests:

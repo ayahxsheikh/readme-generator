@@ -44,7 +44,7 @@ Here is an image to display the readme-generator working in the terminal:
 
 ## Links
 
-Walk-through Video Link: https://drive.google.com/file/d/1zbosrhHnYO70Eh_EAaOf5hTMPTFp8Vim/view 
+Walk-through Video Link: https://drive.google.com/file/d/1qCjseXSa9IBvpBok3J_fpcBB4nAv5JC-/view 
 
 
 ---
