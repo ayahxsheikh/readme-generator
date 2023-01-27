@@ -1,9 +1,9 @@
-# Example README 
+# Example README
   
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
   ## Description
-  An example readme to display the functionality of the app
+  An example README to display the functionality of the app
 
   ## Table of Contents 
   - [Installation](#installation)
@@ -16,26 +16,26 @@
   ## Installation
   To install necessary dependencies, run the following command:
 
-  example dependency
+  enter example dependency here 
 
   ## Usage
-  example instructions for usage
+  example intructions for usage
 
   ## License 
   This project is covered under the Apache license.
   
   ## Contributions
   A list of contributors 
-  contributor 1 and contributor 2
+  example contributor 1 and 2
   
   ## Tests
   Run the following command in the terminal to run tests:
-  example command entered here
+  example command word 
 
   ## Questions
   Contact infotmation:
 
-  GitHub Username: ayahxsheikh
+  GitHub Username: [ayahxsheikh](https://github.com/ayahxsheikh)
 
   Email: ayahshayk@gmail.com
 

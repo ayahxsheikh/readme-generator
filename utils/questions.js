@@ -55,7 +55,7 @@ function questions () {
 
         // function to write README file
         function writeToFile(answers) {
-            fs.writeFile(path.join(__dirname,'..', 'README.md'), generateMarkdown(answers), (err) => {
+            fs.writeFile(path.join(__dirname, '..', 'README.md'), generateMarkdown(answers), (err) => {
                 if (err) throw err;
             });
     };
